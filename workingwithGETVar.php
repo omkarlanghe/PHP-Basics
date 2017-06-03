@@ -1,13 +1,13 @@
 <?php 
 
 	 if (isset($_GET['day'])&&isset($_GET['date'])&&isset($_GET['year'])) {
-		 
+		//variables declared		 
 		 $day = htmlentities($_GET['day']);
 		 $date = htmlentities($_GET['date']);
 		 $year = htmlentities($_GET['year']);
 
 		if(!empty($day)&&!empty($date)&&!empty($year)) {
-			
+			//prints dat,date and year by concatinating...
 			echo 'It is '.$day.' '.$date.' '.$year;
 		
 		} else {
