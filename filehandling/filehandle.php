@@ -12,7 +12,7 @@ if (isset($_POST['name'])) {
 
 		echo 'Current names in file: ';
 
-		$count = 1;  //initial count set to 1
+		$count = 1;	//initial count set to 1
 		$readin = file('names.txt');
 		$readin_count = count($readin);
 		
