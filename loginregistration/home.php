@@ -1,6 +1,16 @@
 <?php
 require 'core.inc.php';
 require 'connect.inc.php';
-include 'loginform.inc.php';
+
+if(loggedin()) {
+	
+	echo 'You are logged in.';
+
+} else {
+
+	include 'loginform.inc.php';
+
+}
+
 
 ?>
