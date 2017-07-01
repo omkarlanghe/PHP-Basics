@@ -4,7 +4,7 @@ require 'connect.inc.php';
 
 if(loggedin()) {
 	
-	echo 'You are logged in.';
+	echo 'You are logged in. <a href="logoutform.php">Log out</a>';
 
 } else {
 
