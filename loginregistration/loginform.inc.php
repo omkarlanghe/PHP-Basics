@@ -34,15 +34,41 @@ if (isset($_POST['username'])&&isset($_POST['password'])) {
 
 	} else {
 		
-		echo 'You must supply a username and password.';
+		//echo 'You must supply a username and password.';
+		echo '<span style="color:#AFA;text-align:center;">You must supply a username and password.</span>';
 	
 	}
 }
 
 ?>
 
-<form action="<?php echo  $current_file; ?>" method="POST">
+<!--
+<form action="<?php //echo  $current_file; ?>" method="POST">
 	Username: <input type="text" name="username">
 	Password: <input type="password" name="password">
 	<input type="submit" name="Log in">
 </form>
+!-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<div id="login">
+
+	<h2>Welcome to Sign In..</h2>
+
+		<form action="<?php echo  $current_file; ?>" method="POST">
+			
+			
+			<input type="text" name="username" placeholder="Enter username" />
+			<input type="password" name="password" placeholder="Enter Password" />
+		<input type="submit" id="login-btn" value ="Log in">
+		</form>
+		
+	</div>
+
+</body>
+</html>
