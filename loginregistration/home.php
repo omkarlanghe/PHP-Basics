@@ -4,7 +4,10 @@ require 'connect.inc.php';
 
 if(loggedin()) {
 	
-	echo 'You are logged in. <a href="logoutform.php">Log out</a>';
+	$firstname = getuserfield('firstname');
+	$surname = getuserfield('surname');
+
+	echo 'You are logged in, '.$firstname.' '.$surname.' <a href="logoutform.php">Log out</a><br>';
 
 } else {
 
