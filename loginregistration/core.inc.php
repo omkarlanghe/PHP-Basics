@@ -4,7 +4,7 @@ ob_start();
 session_start();
 
 $current_file = $_SERVER['SCRIPT_NAME'];
-$http_referer = $_SERVER['HTTP_REFERER']; //tell us the page we have come from..
+@$http_referer = $_SERVER['HTTP_REFERER']; //tell us the page we have come from..
 
 function loggedin() {
 
